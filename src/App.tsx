@@ -9,6 +9,7 @@ import TechMarquee from "./components/TechMarquee"
 import Footer from "./components/Footer"
 
 import PrivacyPolicy from "./pages/PrivacyPolicy"
+import DeleteAccount from "./pages/DeleteAccount"
 
 // Ana sayfa layout’unu ayrı component yaptık
 function Home() {
@@ -32,6 +33,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/delete-account" element={<DeleteAccount />} />
     </Routes>
   )
 }
