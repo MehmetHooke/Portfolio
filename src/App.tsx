@@ -31,7 +31,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/YanlisDefteriPrivacy" element={<PrivacyPolicy />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
     </Routes>
   )
 }
