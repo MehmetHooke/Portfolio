@@ -70,39 +70,39 @@ export default function FeaturedProjects() {
                 label: "Privacy Policy",
                 href: "/privacy",
               },
-              // Play Store çıktıktan sonra ekleyebilirsin:
-              // {
-              //   label: "Play Store",
-              //   href: "PLAY_STORE_LINKI",
-              // },
+             
+              {
+                label: "Play Store",
+                href: "https://play.google.com/store/apps/details?id=com.mehmethooke.yanlisdefteri",
+              },
             ]}
           />
 
-          {/* MovieShelf */}
+          {/* Barber Dashboard */}
           <ProjectCard
-            title="MovieShelf — Movie Discovery App"
-            description="A movie discovery app with authentication and favorites."
+            title="Barber Dashboard — Appointment Management System"
+            description="A modern role-based appointment system for barbers and customers, built around real-world booking and daily operations."
             features={[
-              "Firebase Auth & protected routes",
-              "Favorites CRUD with Firestore",
-              "External movie API integration",
-              "Responsive UI with modern layout",
+              "Customer flow for service selection, time booking, cancellation, and appointment tracking",
+              "Barber dashboard for daily queue management and status updates",
+              "JWT auth with /auth/me validation, 401 handling, and automatic logout",
+              "Responsive mobile-first UI with light/dark theme support",
             ]}
             tech={[
               "React",
               "TypeScript",
+              "Vite",
+              "Node.js",
+              "Express",
+              "Prisma",
+              "PostgreSQL",
               "Tailwind",
-              "Firebase",
-              "REST API",
+              "shadcn/ui",
             ]}
             links={[
               {
-                label: "Live Demo",
-                href: "https://movieshelf-one.vercel.app/",
-              },
-              {
                 label: "GitHub",
-                href: "https://github.com/MehmetHooke/movieshelf",
+                href: "https://github.com/MehmetHooke/Barber-DashBoard",
               },
             ]}
           />
