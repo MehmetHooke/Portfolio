@@ -10,6 +10,14 @@ body {
     #0a0a0a;
 }
 
+#root {
+  isolation: isolate;
+}
+
+.signal-background {
+  filter: blur(0.2px);
+}
+
 .motion-reveal {
   opacity: 0;
   transform: translate3d(0, 20px, 0);

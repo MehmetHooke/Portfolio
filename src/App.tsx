@@ -7,6 +7,7 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import TechMarquee from "./components/TechMarquee"
 import Footer from "./components/Footer"
+import SignalBackground from "./components/SignalBackground"
 
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import DeleteAccount from "./pages/DeleteAccount"
@@ -15,6 +16,7 @@ import DeleteAccount from "./pages/DeleteAccount"
 function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
+      <SignalBackground />
       <div className="relative z-10">
         <Hero />
         <TechMarquee />
