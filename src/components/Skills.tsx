@@ -37,7 +37,7 @@ export default function Skills() {
         {Object.entries(SKILLS).map(([group, items], index) => (
           <Reveal key={group} delay={index * 90}>
             <div className="rounded-2xl">
-              <GlassCard className="p-4 transition duration-500 ease-out hover:-translate-y-1 hover:bg-white/[0.06]">
+              <GlassCard className="p-4 transition duration-500 ease-out hover:-translate-y-1 hover:bg-white/6">
                 <h3 className="text-lg font-medium">{group}</h3>
 
                 <div className="mt-4 flex flex-wrap gap-2">
