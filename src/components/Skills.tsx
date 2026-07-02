@@ -2,7 +2,8 @@ import GlassCard from "./GlassCard"
 import Reveal from "./Reveal"
 
 const SKILLS = {
-  "Mobile Development": [
+  "Web & Mobile Development": [
+    "React",
     "React Native",
     "Expo",
     "TypeScript",
@@ -14,6 +15,8 @@ const SKILLS = {
     "Cloud Firestore",
     "Firebase Auth",
     "REST APIs",
+    "PHP",
+    "SQL",
     "Backend Integration",
   ],
   "Quality & Testing": ["Jest", "React Testing Library", "Scalable App Structure"],
@@ -27,7 +30,7 @@ export default function Skills() {
         <div className="mb-12 max-w-3xl">
           <h2 className="text-3xl font-semibold">Skills</h2>
           <p className="mt-4 text-white/65">
-            A mobile-focused stack centered on React Native products, Firebase
+            A Web & Mobil stack centered on React Native products, Firebase
             backends, and clean delivery workflows.
           </p>
         </div>

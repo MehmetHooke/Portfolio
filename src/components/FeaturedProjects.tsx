@@ -57,7 +57,7 @@ export default function FeaturedProjects() {
             <Reveal delay={150}>
               <ProjectCard
                 title="QuickCV"
-                badge="Shipped App"
+                badge="Live Product"
                 description="A mobile CV builder that helps users create professional resumes step by step, preview them on-device, and export polished PDFs from a consistent backend render pipeline."
                 features={[
                   "Built the end-to-end mobile flow for collecting personal information, education, experience, skills, languages, certifications, and summary content in a guided React Native experience.",
@@ -86,6 +86,34 @@ export default function FeaturedProjects() {
                   {
                     label: "Demo Video",
                     href: "https://www.linkedin.com/posts/mehmethoke_reactnative-expo-firebase-activity-7397329037620297729-EFii",
+                  },
+                ]}
+              />
+            </Reveal>
+            <Reveal delay={150}>
+              <ProjectCard
+                title="Barber Appointment System"
+                badge="Developed"
+                description="An appointment website that allows users to book appointments with barbers. I also developed dedicated areas where barbers can view their appointments and earnings."
+                features={[
+                  "I developed a React-based appointment management interface.",
+                  "I managed appointments, queues, and user data through RESTful APIs.",
+                  "Integrated a backend render service that receives CV data plus the selected theme, returns PDF binary output, and gives the app a more reliable cross-platform export flow than on-device PDF generation.",
+                  "I handled async data flow, loading, and error states withI developed a React-based appointment manageructures.",
+                ]}
+                tech={[
+                  "React",
+                  "Express",
+                  "Node JS",
+                  "Rest-API",
+                  "TailwindCSS",
+                  "Prisma",
+                  "TypeScript",
+                ]}
+                links={[
+                  {
+                    label: "Github Repo",
+                    href: "https://github.com/MehmetHooke/Barber-DashBoard",
                   },
                 ]}
               />
