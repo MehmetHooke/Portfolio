@@ -11,7 +11,7 @@ export default function Hero() {
           </p>
 
           <h1 className="text-4xl font-semibold leading-tight sm:text-5xl">
-            Mobile Developer (React Native)
+            Software Developer | Mobil & Web
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg text-white/70">
