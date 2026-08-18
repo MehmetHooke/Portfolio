@@ -11,6 +11,8 @@ import SignalBackground from "./components/SignalBackground"
 
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import DeleteAccount from "./pages/DeleteAccount"
+import PiyanomlaBasBasa from "./pages/PiyanomlaBasBasa"
+import PiyanomlaBasBasaPrivacy from "./pages/PiyanomlaBasBasaPrivacy"
 
 // Ana sayfa layout’unu ayrı component yaptık
 function Home() {
@@ -36,6 +38,11 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/delete-account" element={<DeleteAccount />} />
+      <Route path="/piyanomla-bas-basa" element={<PiyanomlaBasBasa />} />
+      <Route
+        path="/piyanomla-bas-basa/privacy"
+        element={<PiyanomlaBasBasaPrivacy />}
+      />
     </Routes>
   )
 }
