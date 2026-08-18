@@ -10,14 +10,47 @@ export default function FeaturedProjects() {
           <div className="mb-8 flex flex-col gap-3">
             <h2 className="text-3xl font-semibold">Featured Projects</h2>
             <p className="max-w-3xl text-white/65">
-              Two shipped mobile products that reflect how I approach product
-              thinking, Firebase-backed architecture, and mobile UX in
-              production.
+              Mobile and web products that reflect how I approach product
+              thinking, Firebase-backed architecture, and production-focused UX.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             <Reveal delay={60}>
+              <ProjectCard
+                title="Piyanomla Baş Başa"
+                badge="In Release"
+                description="A piano practice platform that records student performances, compares them with reference audio, and turns note accuracy and timing results into clear feedback."
+                features={[
+                  "Built the React Native practice flow for selecting a song, listening to reference audio, preparing with a metronome, recording a performance, and reviewing the result.",
+                  "Implemented a Firebase-backed analysis job pipeline using Auth, Firestore, Storage, and Functions, with heavy audio processing handled by a Python/FastAPI service on Google Cloud Run.",
+                  "Designed note-level feedback for correct, wrong, missed, extra, early, and late notes alongside overall, pitch, and timing scores.",
+                  "Extended the product around student, teacher, and parent roles so practice history and performance summaries can support longer-term progress tracking.",
+                ]}
+                tech={[
+                  "React Native",
+                  "Expo",
+                  "TypeScript",
+                  "Firebase",
+                  "Google Cloud Run",
+                  "Python",
+                  "FastAPI",
+                  "FFmpeg",
+                ]}
+                links={[
+                  {
+                    label: "Project Page",
+                    href: "/piyanomla-bas-basa",
+                  },
+                  {
+                    label: "Privacy Policy",
+                    href: "/piyanomla-bas-basa/privacy",
+                  },
+                ]}
+              />
+            </Reveal>
+
+            <Reveal delay={90}>
               <ProjectCard
                 title="Yanlis Defteri"
                 badge="Live Product"
@@ -90,6 +123,7 @@ export default function FeaturedProjects() {
                 ]}
               />
             </Reveal>
+
             <Reveal delay={150}>
               <ProjectCard
                 title="Barber Appointment System"
