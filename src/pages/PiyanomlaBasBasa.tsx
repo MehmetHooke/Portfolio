@@ -123,6 +123,12 @@ export default function PiyanomlaBasBasa() {
             >
               Gizlilik Politikası
             </Link>
+            <Link
+              to="/piyanomla-bas-basa/delete-account"
+              className="rounded-xl border border-white/15 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/[0.06]"
+            >
+              Hesap Silme
+            </Link>
           </div>
         </section>
 
