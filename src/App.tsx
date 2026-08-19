@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy"
 import DeleteAccount from "./pages/DeleteAccount"
 import PiyanomlaBasBasa from "./pages/PiyanomlaBasBasa"
 import PiyanomlaBasBasaPrivacy from "./pages/PiyanomlaBasBasaPrivacy"
+import PiyanomlaBasBasaDeleteAccount from "./pages/PiyanomlaBasBasaDeleteAccount"
 
 // Ana sayfa layout’unu ayrı component yaptık
 function Home() {
@@ -42,6 +43,10 @@ function App() {
       <Route
         path="/piyanomla-bas-basa/privacy"
         element={<PiyanomlaBasBasaPrivacy />}
+      />
+      <Route
+        path="/piyanomla-bas-basa/delete-account"
+        element={<PiyanomlaBasBasaDeleteAccount />}
       />
     </Routes>
   )
