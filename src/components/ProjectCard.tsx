@@ -1,6 +1,7 @@
 type ProjectCardProps = {
   title: string
   badge?: string
+  logo?: string
   description: string
   features: string[]
   tech: string[]
@@ -14,6 +15,7 @@ function isExternalLink(href: string) {
 export default function ProjectCard({
   title,
   badge,
+  logo,
   description,
   features,
   tech,
@@ -21,13 +23,26 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="rounded-2xl border border-white/10 bg-white/5 p-6 ring-1 ring-white/5 transition duration-500 ease-out hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.065]">
-      <div className="flex flex-wrap items-center gap-3">
-        <h3 className="text-2xl font-medium">{title}</h3>
-        {badge ? (
-          <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-emerald-200">
-            {badge}
-          </span>
+      <div className="flex items-start gap-4">
+        {logo ? (
+          <img
+            src={logo}
+            alt={`${title} logo`}
+            width={64}
+            height={64}
+            loading="lazy"
+            decoding="async"
+            className="h-16 w-16 shrink-0 rounded-2xl border border-white/10 bg-black/20 object-contain p-1"
+          />
         ) : null}
+        <div className="flex min-w-0 flex-wrap items-center gap-3">
+          <h3 className="text-2xl font-medium">{title}</h3>
+          {badge ? (
+            <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-emerald-200">
+              {badge}
+            </span>
+          ) : null}
+        </div>
       </div>
 
       <p className="mt-3 text-white/70">{description}</p>

@@ -19,12 +19,6 @@ export default function Reveal({
     const node = ref.current
     if (!node) return
 
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")
-    if (mediaQuery.matches) {
-      setIsVisible(true)
-      return
-    }
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

@@ -11,11 +11,40 @@ export default function FeaturedProjects() {
             <h2 className="text-3xl font-semibold">Featured Projects</h2>
             <p className="max-w-3xl text-white/65">
               Mobile and web products that reflect how I approach product
-              thinking, Firebase-backed architecture, and production-focused UX.
+              thinking, real-time systems, and production-focused UX.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
+            <Reveal delay={40}>
+              <ProjectCard
+                title="SyncLingo"
+                badge="In Development"
+                logo="/synclingo-logo.png"
+                description="A live translation platform for multilingual events, turning speaker audio into real-time captions and translated speech that attendees can follow in their browser."
+                features={[
+                  "Built an operator dashboard for managing event sessions, speakers, source languages, and live transcript delivery.",
+                  "Integrated Azure Speech and Translator with Supabase Realtime to stream captions across language channels, with automatic speaker language detection.",
+                  "Developed shared voice-over generation with ordered playback and audio prefetching so attendees can listen to translations in their selected language.",
+                  "Created QR-based attendee access without app installation, alongside a Translation Lab for reviewing translation quality, speech segmentation, and playback latency.",
+                ]}
+                tech={[
+                  "Next.js",
+                  "React",
+                  "TypeScript",
+                  "Supabase",
+                  "Azure Speech",
+                  "Azure Translator",
+                  "Tailwind CSS",
+                ]}
+                links={[
+                  {
+                    label: "GitHub",
+                    href: "https://github.com/MehmetHooke/synclingo",
+                  },
+                ]}
+              />
+            </Reveal>
             <Reveal delay={60}>
               <ProjectCard
                 title="Piyanomla Baş Başa"
