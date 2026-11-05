@@ -42,6 +42,10 @@ export default function FeaturedProjects() {
                     label: "GitHub",
                     href: "https://github.com/MehmetHooke/synclingo",
                   },
+                  {
+                    label: "Live Website",
+                    href: "https://synclingo.vercel.app/",
+                  },
                 ]}
               />
             </Reveal>
